@@ -1,0 +1,15 @@
+table {
+  font-size: 1.2em;
+}
+
+input[type="text"], button {
+  font-size: 1em;
+}
+
+button[type="submit"] {
+  height: 100%;
+  width: 12ex;
+}
+
+td.submit {
+}

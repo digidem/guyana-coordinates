@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form id="transform">
+      <table>
+        <tr>
+          <th>code</th>
+          <th>
+            <div>easting /</div>
+            <div>longitude</div>
+          </th>
+          <th>
+            <div>northing /</div>
+            <div>latitude</div>
+          </th>
+          <td rowspan="3" class="submit">
+            <button type="submit">calculate</button>
+          </td>
+        </tr>
+        <tr>
+          <td><input name="src-code" type="text" value="EPSG:24821"></td>
+          <td><input name="src-x" type="text"></td>
+          <td><input name="src-y" type="text"></td>
+        </tr>
+        <tr>
+          <td><input name="dst-code" type="text" value="EPSG:4326"></td>
+          <td><input name="dst-x" type="text"></td>
+          <td><input name="dst-y" type="text"></td>
+        </tr>
+      </table>
+    </form>
+    <hr>
+    <div>
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>

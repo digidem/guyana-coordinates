@@ -1,5 +1,7 @@
 var Proj = require('proj4js')
 require('proj4js-defs')(Proj)
+require('proj4js/lib/projCode/tmerc.js')
+require('proj4js/lib/projCode/utm.js')
 
 module.exports = function (src, dst, point, cb) {
   var pending = 2

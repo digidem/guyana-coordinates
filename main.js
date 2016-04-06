@@ -22,6 +22,18 @@ document.querySelector('#flip').addEventListener('click', function (ev) {
   swap(form.elements['src-y'], form.elements['dst-y'])
 })
 
+;[].slice.call(document.querySelectorAll('button.in')).forEach(function (button) {
+  button.addEventListener('click', function (ev) {
+    form.elements['src-code'].value = 'EPSG:' + button.getAttribute('code')
+  })
+})
+
+;[].slice.call(document.querySelectorAll('button.out')).forEach(function (button) {
+  button.addEventListener('click', function (ev) {
+    form.elements['dst-code'].value = 'EPSG:' + button.getAttribute('code')
+  })
+})
+
 function swap (a, b) {
   var c = a.value
   a.value = b.value

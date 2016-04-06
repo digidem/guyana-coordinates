@@ -6,11 +6,11 @@ require('proj4js/lib/projCode/utm.js')
 module.exports = function (src, dst, point, cb) {
   var pending = 2
   var srcp, dstp
-  new(Proj.Proj)('EPSG:24821', function (p) {
+  new(Proj.Proj)(src, function (p) {
     srcp = p
     if (--pending === 0) ready()
   })
-  new(Proj.Proj)('EPSG:4326', function (p) {
+  new(Proj.Proj)(dst, function (p) {
     dstp = p
     if (--pending === 0) ready()
   })

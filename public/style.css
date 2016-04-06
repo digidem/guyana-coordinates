@@ -22,3 +22,11 @@ td.flip {
 td.submit {
   vertical-align: bottom;
 }
+
+th.desc {
+  text-align: left;
+}
+
+td.desc {
+  max-width: 90ex;
+}

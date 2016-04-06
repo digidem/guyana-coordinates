@@ -4,20 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "proj4js": "~0.3.0",
-    "proj4js-defs": "~0.0.1"
-  },
-  "scripts": {
     "build": "browserify main.js | npm run -s fix > public/bundle.js",
     "fix": "sed -r 's/<\\/script>/<\\/ script>/ig'",
     "inline": "html-inline public/index.html > dist.html",
     "dist": "npm run build && npm run inline",
     "watch": "watchify main.js -o public/bundle.js -dv"
+  },
+  "keywords": [
+    "guyana",
+    "epsg",
+    "coordinate",
+    "psad56"
+  ],
+  "author": "substack",
+  "license": [ "public domain", "cc0" ],
+  "dependencies": {
+    "proj4js": "~0.3.0",
+    "proj4js-defs": "~0.0.1"
   }
 }

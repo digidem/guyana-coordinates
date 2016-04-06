@@ -6,6 +6,9 @@
     <form id="transform">
       <table>
         <tr>
+          <td rowspan="3" class="flip">
+            <button id="flip"><img src="flip.svg"></button>
+          </td>
           <th>code</th>
           <th>
             <div>easting /</div>
@@ -26,8 +29,8 @@
         </tr>
         <tr>
           <td><input name="dst-code" type="text" value="EPSG:4326"></td>
-          <td><input name="dst-x" type="text"></td>
-          <td><input name="dst-y" type="text"></td>
+          <td><input name="dst-x" type="text" disabled></td>
+          <td><input name="dst-y" type="text" disabled></td>
         </tr>
       </table>
     </form>

@@ -14,3 +14,16 @@ form.addEventListener('submit', function (ev) {
     form.elements['dst-y'].value = result[1]
   })
 })
+
+document.querySelector('#flip').addEventListener('click', function (ev) {
+  ev.preventDefault()
+  swap(form.elements['src-code'], form.elements['dst-code'])
+  swap(form.elements['src-x'], form.elements['dst-x'])
+  swap(form.elements['src-y'], form.elements['dst-y'])
+})
+
+function swap (a, b) {
+  var c = a.value
+  a.value = b.value
+  b.value = c
+}

@@ -7,9 +7,18 @@ input[type="text"], button {
 }
 
 button[type="submit"] {
-  height: 100%;
   width: 12ex;
+  height: 3em;
+}
+
+button#flip {
+  height: 3em;
+}
+
+td.flip {
+  vertical-align: bottom;
 }
 
 td.submit {
+  vertical-align: bottom;
 }

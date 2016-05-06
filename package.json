@@ -17,7 +17,7 @@
     "psad56"
   ],
   "author": "substack",
-  "license": [ "public domain", "cc0" ],
+  "license": "MIT",
   "dependencies": {
     "proj4js": "~0.3.0",
     "proj4js-defs": "~0.0.1"
